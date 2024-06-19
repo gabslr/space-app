@@ -49,7 +49,7 @@ const Imagen = ({ foto, expandida = false, alSolicitarZoom,alAlternarFavorito}) 
                 <Pie>
                     <h4>{foto.fuente}</h4>
                     <BotonIcono onClick={()=>alAlternarFavorito(foto)}>
-                        <img src={iconoFavorito} alt="Icone de favorito" />
+                        <img src={iconoFavorito} alt="Icono de favorito" />
                     </BotonIcono>
                     {!expandida && <BotonIcono aria-hidden={expandida} onClick={()=>alSolicitarZoom(foto)}>
                     <img src="/iconos/expandir.png" alt="Icono de expandir" />
